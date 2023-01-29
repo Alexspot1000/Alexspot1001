@@ -1,4 +1,10 @@
-bg = 255;
+bg = 255
+
+one = 255
+
+two = 255
+
+three = 255
 
 def setup():
     size(600,400)
@@ -6,7 +12,7 @@ def setup():
     strokeWeight(50)
     
 def draw():
-    global bg
+    global bg,one,two,three;
     #кнопка прямоугольная
     fill(0)
     # левый верхний угол 250 150, размеры 100 на 50
@@ -17,9 +23,9 @@ def draw():
         
     
 def mouseClicked():
-    global bg
+    global bg,one,two,three;
     # если прямоугольная кнопка нажата
     
     if mouseX > 250 and mouseX < 350 and mouseY > 150 and mouseY < 200:
         stroke(0)
-        strokeWeight(255)
+        strokeWeight(one,two,three)
